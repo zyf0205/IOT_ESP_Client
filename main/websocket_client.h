@@ -6,7 +6,7 @@
 #include <stdbool.h>
 
 // WebSocket 服务器配置
-#define SERVER_URI "ws://192.168.79.181:8765"
+#define SERVER_URI "ws://192.168.80.181:8765"
 #define DEVICE_ID 0x01020304
 
 // 初始化 WebSocket 客户端
