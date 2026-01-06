@@ -1,4 +1,4 @@
-#include "sensor.h"
+#include "report.h"
 #include "websocket_client.h"
 #include "protocol.h"
 #include "net_time.h"
@@ -15,9 +15,10 @@
 #define DHT_SENSOR_GPIO GPIO_NUM_4
 #define LIGHT_SENSOR_ADC_CHANNEL ADC_CHANNEL_6 /*GPIO 34*/
 
+/*是否注册成功*/
 bool is_register = false;
 
-// 温湿度上报
+/*上报任务*/
 static void report_task(void *pvParameters)
 {
   // ADC 初始化

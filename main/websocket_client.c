@@ -8,7 +8,7 @@
 #include <stdbool.h>
 #include <inttypes.h>
 #include "display.h"
-#include "sensor.h"
+#include "report.h"
 
 #define LED_GPIO GPIO_NUM_2 /*ledGPIO*/
 

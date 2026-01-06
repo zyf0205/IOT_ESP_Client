@@ -3,7 +3,7 @@
 #include "nvs_flash.h"
 #include "wifi_mgr.h"
 #include "websocket_client.h"
-#include "sensor.h"
+#include "report.h"
 #include "display.h"
 
 void app_main(void)

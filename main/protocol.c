@@ -1,5 +1,5 @@
 #include "protocol.h"
-#include "sensor.h"
+#include "report.h"
 
 // CRC16(Modbus)
 uint16_t calc_crc16(const uint8_t *data, size_t len)
