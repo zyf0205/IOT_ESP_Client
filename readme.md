@@ -61,3 +61,5 @@ IOTProtocol/
 - `0x01` - 心跳包
 - `0x10` - 数据上报（温湿度 + 时间戳）
 - `0x80` - 控制命令（LED 开关等）
+
+ ![alt text](image.png)
