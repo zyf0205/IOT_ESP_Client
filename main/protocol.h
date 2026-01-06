@@ -8,9 +8,11 @@
 #define FRAME_HEAD 0xAA55        /*起始信号*/
 #define FRAME_VER 0x12           /*版本*/
 #define CMD_HEARTBEAT 0x01       /*设备心跳*/
+#define CMD_HEARTBEAT_RESP 0x02  /*心跳响应*/
 #define CMD_REGISTER 0x03        /*设备注册*/
 #define CMD_REGISTER_ANSWER 0x04 /*注册响应*/
 #define CMD_REPORT 0x10          /*传感器数据上报*/
+#define CMD_ACK 0x20             /*确认上报*/
 #define CMD_FAULT 0x30           /*故障通知*/
 #define CMD_CONTROL 0x80         /*控制*/
 

@@ -30,6 +30,7 @@ static void websocket_event_handler(void *handler_args, esp_event_base_t base, i
   case WEBSOCKET_EVENT_DISCONNECTED:
     ESP_LOGW(TAG, "WEBSOCKET_EVENT_DISCONNECTED");
     sys_data.is_connected = false;
+    is_register = 0;
     break;
 
   case WEBSOCKET_EVENT_DATA:
@@ -98,6 +99,14 @@ static void websocket_event_handler(void *handler_args, esp_event_base_t base, i
           is_register = 0; /*注册失败*/
           ESP_LOGI("register", "register failed");
         }
+      }
+      else if (cmd == CMD_HEARTBEAT_RESP)
+      {
+        ESP_LOGI(TAG, "收到心跳响应");
+      }
+      else if (cmd == CMD_ACK)
+      {
+        ESP_LOGI(TAG, "收到上报确认");
       }
     }
     break;

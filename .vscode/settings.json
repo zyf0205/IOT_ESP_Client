@@ -20,6 +20,7 @@
   "files.associations": {
     "time.h": "c",
     "websocket_client.h": "c",
-    "sensor.h": "c"
+    "sensor.h": "c",
+    "protocol.h": "c"
   }
 }
